@@ -1,0 +1,148 @@
+﻿<Window x:Class="ServiceMonitor.MainApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:local="clr-namespace:ServiceMonitor.MainApplication" 
+        xmlns:XMLViewer="clr-namespace:XMLViewer;assembly=XMLViewer" 
+        xmlns:TemplateSelectors="clr-namespace:ServiceMonitor.MainApplication.TemplateSelectors"
+        xmlns:Converters="clr-namespace:ServiceMonitor.MainApplication.Converters"
+        Title="Roniz WCF Monitor" Height="350" Width="Auto">
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static local:MainWindow.StartMonitorCommand}" Executed="StartMonitorExecuted" CanExecute="StartMonitorCanExecute" />
+        <CommandBinding Command="{x:Static local:MainWindow.StopMonitorCommand}"  Executed="StopMonitorExecuted"  CanExecute="StopMonitorCanExecute"  />
+        <CommandBinding Command="{x:Static local:MainWindow.CleanMonitorCommand}"  Executed="CleanMonitorExecuted"  CanExecute="CleanMonitorCanExecute"  />
+    </Window.CommandBindings>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*" />
+            <RowDefinition Height="250*" />
+            <RowDefinition Height="30*" />
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="Start Monitor" Command="local:MainWindow.StartMonitorCommand" />
+            <MenuItem Header="Stop Monitor" Command="local:MainWindow.StopMonitorCommand"/>
+            <MenuItem Header="Clean Monitor" Command="local:MainWindow.CleanMonitorCommand"/>
+            <MenuItem Header="Discovery options">
+                <MenuItem Header="Use Ad-Hoc (Find)" IsCheckable="True" IsChecked="True" Name="UseAdHocDiscoveryMenuItem" />
+                <MenuItem Header="Use Managed (Announcement)" IsCheckable="True" IsChecked="True" Name="UseManagedDiscoveryMenuItem" />
+                <MenuItem Header="UDP Discovery" IsCheckable="True" Name="UDPDiscoveryMenuItem" Checked="UdpDiscoveryMenuItemChecked" Unchecked="UdpDiscoveryMenuItemUnchecked" IsChecked="True"/>
+                <MenuItem Header="P2P Discovery" IsCheckable="True" Name="P2PDiscoveryMenuItem" Checked="P2PDiscoveryMenuItemChecked" Unchecked="P2PDiscoveryMenuItemUnchecked" />
+            </MenuItem>
+        </Menu>
+
+        <DataGrid x:Name="DataGridAnnouncementEvents" 
+                  ItemsSource="{Binding}"
+                  Grid.Row="1" 
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  IsReadOnly="True"
+                  AutoGenerateColumns="False">
+            <DataGrid.Resources>
+
+                <DataTemplate x:Key="ContractTypeNamesSingleItemTemplate">
+                    <TextBlock Text="{Binding Path=Value.ContractTypeNames[0]}" />
+                </DataTemplate>
+                <DataTemplate x:Key="ContractTypeNamesMultiItemsTemplate">
+                    <ComboBox ItemsSource="{Binding Path=Value.ContractTypeNames}" />
+                </DataTemplate>
+
+                <DataTemplate x:Key="ExtensionsSingleItemTemplate">
+                    <TextBlock Text="{Binding Path=Value.Extensions[0]}" />
+                </DataTemplate>
+                <DataTemplate x:Key="ExtensionsMultiItemsTemplate">
+                    <ComboBox ItemsSource="{Binding Path=Value.Extensions}" />
+                </DataTemplate>
+
+                <DataTemplate x:Key="ListenUrisSingleItemTemplate">
+                    <TextBlock Text="{Binding Path=Value.ListenUris[0]}" />
+                </DataTemplate>
+                <DataTemplate x:Key="ListenUrisMultiItemsTemplate">
+                    <ComboBox ItemsSource="{Binding Path=Value.ListenUris}" />
+                </DataTemplate>
+
+                <DataTemplate x:Key="ScopesSingleItemTemplate">
+                    <TextBlock Text="{Binding Path=Value.Scopes[0]}" />
+                </DataTemplate>
+                <DataTemplate x:Key="ScopesMultiItemsTemplate">
+                    <ComboBox ItemsSource="{Binding Path=Value.Scopes}" />
+                </DataTemplate>
+
+                <DataTemplate x:Key="xmlTemplate">
+                    <Border BorderBrush="AliceBlue" BorderThickness="3">
+                        <XMLViewer:Viewer XElement="{Binding}"/>
+                    </Border>
+                </DataTemplate>
+                <Converters:GlobalAddressConverter x:Key="GlobalAddressConverter" />
+
+            </DataGrid.Resources>
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Address"  Binding="{Binding Path=Value.Address}"/>
+                <DataGridTextColumn Header="Global Address"  Binding="{Binding Path=Value.Extensions,Converter={StaticResource GlobalAddressConverter}}"/>
+                <DataGridTemplateColumn Header="Contracts Names">
+                    <DataGridTemplateColumn.CellTemplateSelector>
+                        <TemplateSelectors:ContractNamesTemplateSelector
+                            SingleItemTemplate ="{StaticResource ContractTypeNamesSingleItemTemplate}"
+                            MultiItemsTemplate ="{StaticResource ContractTypeNamesMultiItemsTemplate}"
+                        />
+                    </DataGridTemplateColumn.CellTemplateSelector>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="Extensions" Binding="{Binding Path=Value.Extensions.Count}" />
+                <!--<DataGridTemplateColumn Header="Extensions">
+                    <DataGridTemplateColumn.CellTemplateSelector>
+                        <TemplateSelectors:ExtensionsTemplateSelector
+                            SingleItemTemplate ="{StaticResource ExtensionsSingleItemTemplate}"
+                            MultiItemsTemplate ="{StaticResource ExtensionsMultiItemsTemplate}"
+                        />
+                    </DataGridTemplateColumn.CellTemplateSelector>
+                </DataGridTemplateColumn>-->
+
+                <!--<DataGridTextColumn Header="ListenUris"  Binding="{Binding Path=Value.ListenUris.Count,Mode=OneWay}"/>-->
+                <DataGridTemplateColumn Header="ListenUris">
+                    <DataGridTemplateColumn.CellTemplateSelector>
+                        <TemplateSelectors:ListenUrisTemplateSelector
+                            SingleItemTemplate ="{StaticResource ListenUrisSingleItemTemplate}"
+                            MultiItemsTemplate ="{StaticResource ListenUrisMultiItemsTemplate}"
+                        />
+                    </DataGridTemplateColumn.CellTemplateSelector>
+                </DataGridTemplateColumn>
+
+                <!--<DataGridTextColumn Header="Scopes"  Binding="{Binding Path=Value.Scopes.Count,Mode=OneWay}"/>-->
+                <DataGridTemplateColumn Header="Scopes">
+                    <DataGridTemplateColumn.CellTemplateSelector>
+                        <TemplateSelectors:ScopesTemplateSelector
+                            SingleItemTemplate ="{StaticResource ScopesSingleItemTemplate}"
+                            MultiItemsTemplate ="{StaticResource ScopesMultiItemsTemplate}"
+                        />
+                    </DataGridTemplateColumn.CellTemplateSelector>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="Version" Binding="{Binding Path=Value.Version}"/>
+            </DataGrid.Columns>
+
+            <DataGrid.RowDetailsTemplate>
+                <DataTemplate>
+                    <Border BorderThickness="1" Background="BlanchedAlmond" Padding="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <GroupBox Header="Extensions"
+                                      Grid.Column="0">
+                                <ListBox ItemsSource="{Binding Path=Value.Extensions}" ItemTemplate="{StaticResource xmlTemplate}" />
+                            </GroupBox>
+
+                            <GroupBox Header="Scopes"
+                                      Grid.Column="1">
+                                <ListBox ItemsSource="{Binding Path=Value.Scopes}" />
+                            </GroupBox>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </DataGrid.RowDetailsTemplate>
+        </DataGrid>
+    </Grid>
+</Window>

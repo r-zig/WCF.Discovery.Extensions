@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ServiceMonitor.MainApplication">
+</Property><Property Name="Solution File" Value="D:\Users\Ron\Documents\Visual Studio 2010\Projects\Roniz\WCF\Discovery\Roniz.WCF.ServiceMonitor\ServiceMonitor.MainApplication\ServiceMonitor.MainApplication.sln">
+</Property><Property Name="Date" Value="יום שישי 21 ינואר 2011">
+</Property><Property Name="Time" Value="22:07:15">
+</Property></Properties><Event ErrorLevel="0" Project="XMLViewer" Source="..\XMLViewer\XMLViewer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="XMLViewer" Source="..\XMLViewer\XMLViewer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="XMLViewer" Source="..\XMLViewer\XMLViewer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

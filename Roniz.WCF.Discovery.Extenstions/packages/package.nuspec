@@ -1,0 +1,29 @@
+﻿<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>WCF.Discovery.Extensions</id>
+    <version>0.0.0.9</version>
+    <authors>Ron zigelman</authors>
+    <licenseUrl>http://www.roniz.net/2011/07/my-work-license.html</licenseUrl>
+    <projectUrl>http://wcfdiscovery.codeplex.com</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <summary>Extend the WCF discovery to support more features</summary>
+    <description>
+      !!PRE RELEASE VERSION!!
+      The package published is not complete yet.
+      meanwhile it only complete discovery announcement via p2p instead of udp.
+      The ad-hoc discovery via Find and Resolve not implemented yet.
+      But the rest is already there -
+      
+      Extend the WCF discovery to support:
+      1. Service publish its real service address - such as external IP when service is behind NAT
+      2. Client discovery over any network topology (behind NAT)
+      Also (in the roadmap):
+      Binding discovery - clients will receive the binding from the server and connect to it automaticlly.
+    </description>
+  </metadata>
+  <files>
+    <file src="..\Extenstions\bin\release\*.dll" target="lib\NET40" />
+    <file src="app.config.transform" target="content" />
+  </files>
+</package>

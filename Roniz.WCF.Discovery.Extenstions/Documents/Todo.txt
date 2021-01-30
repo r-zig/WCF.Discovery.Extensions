@@ -1,0 +1,31 @@
+1. behaviors via config + attribute
+	1.1 when port is 0 the regular discovery show 0 and not the actual port - should expose it like with the global address
+2. binding discovery
+3. discovery client that take connect smart using it
+4. ad-hoc discovery (find) not working because the nature of P2P that is One Way - this operation need to be implement in some different way - maybe to create new client discovery class that support both one way and request- replay messages.
+	consider:
+		a. using instead of p2p some pub-sub that support 2 ways operations
+		b. interact with the discovery contract: 
+		the side of the service monitor (client discovery->find - that result with zero endpoints)
+		The message with Action 'http://docs.oasis-open.org/ws-dd/ns/discovery/2009/01/Probe' cannot be processed at the receiver, due to a ContractFilter mismatch at the EndpointDispatcher. This may be because of either a contract mismatch (mismatched Actions between sender and receiver) or a binding/security mismatch between the sender and the receiver.  Check that sender and receiver have the same contract and the same binding (including security requirements, e.g. Message, Transport, None).
+		msdn.microsoft.com/he-IL/library/System.ServiceModel.ServiceOperationMissingReplyContext.aspx</TraceIdentifier><Description>The Request/Reply operation * has no IRequestContext to use for the reply.</Description>
+
+		the service side (that should respond to the probe match)
+		System.ServiceModel.Discovery.Version11.IDiscoveryResponseContract11.BeginProbeMatchOperation
+
+		http://reflector.webtropy.com/default.aspx/4@0/4@0/untmp/DEVDIV_TFS/Dev10/Releases/RTMRel/ndp/cdf/src/NetFx40/System@ServiceModel@Discovery/System/ServiceModel/Discovery/VersionCD1/DiscoveryInnerClientAdhocCD1@cs/1305376/DiscoveryInnerClientAdhocCD1@cs
+		http://reflector.webtropy.com/default.aspx/4@0/4@0/untmp/DEVDIV_TFS/Dev10/Releases/RTMRel/ndp/cdf/src/NetFx40/System@ServiceModel@Discovery/System/ServiceModel/Discovery/DiscoveryClient@cs/1305376/DiscoveryClient@cs
+
+		25.6.2011:
+		start implement using SynchronizaedServiceCache , problem instantiate FindAsyncComplete args - no ctor - consider reflection
+
+		15.7.2011
+		For the SynchronizaedServiceCache have its own service discovery metadata and criteria - 
+		should add the option to ask (via named pipes or other local transport) the serviceHost for its data.
+		Maybe using some Helper method Collection<EndpointDiscoveryMetadata> serviceHost.GetEndpointDiscoveryMetadata();
+		it should implement by:
+		1. inject service discovery for the service that is listening on local transport
+		2. The method will see all service endpoints , and for each of them - see if contains discovery and its not disabled
+		3. do Find for each of them and return the result
+
+5. For port ZERO 0 - the local address provider does not work - should create some providers that work after service is in opened state

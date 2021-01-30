@@ -1,0 +1,140 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Roniz" priority="1" />
+      <Item value="Discovery" priority="0" />
+      <Item value="Extenstions" priority="0" />
+      <Item value="Behaviors" priority="0" />
+      <Item value="Address" priority="0" />
+      <Item value="AddressExtensionProvider`0" priority="0" />
+      <Item value="xElement" priority="0" />
+      <Item value="p" priority="0" />
+      <Item value="NLog" priority="0" />
+      <Item value="messageSequence" priority="0" />
+      <Item value="endpointDiscoveryMetadata" priority="0" />
+      <Item value="DiscoveryEndpoint`0" priority="0" />
+      <Item value="discoveryEndpoint" priority="1" />
+      <Item value="new" priority="1" />
+      <Item value="discoveryClient" priority="3" />
+      <Item value="P2PDiscoveryMenuItem" priority="1" />
+      <Item value="false" priority="3" />
+      <Item value="UDPDiscoveryMenuItem" priority="0" />
+      <Item value="true" priority="2" />
+      <Item value="if" priority="4" />
+      <Item value="else" priority="2" />
+      <Item value="MessageBox`0" priority="0" />
+      <Item value="return" priority="0" />
+      <Item value="announcementEndpoint" priority="1" />
+      <Item value="null" priority="3" />
+      <Item value="Dispatcher" priority="0" />
+      <Item value="announcementEvents" priority="0" />
+      <Item value="e" priority="8" />
+      <Item value="ResolveCriteria" priority="0" />
+      <Item value="AddOrUpdateService`0" priority="0" />
+      <Item value="Console`0" priority="0" />
+      <Item value="discoveryProxyService" priority="0" />
+      <Item value="IsSystemEndpoint" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Discovery.DiscoveryMessageSequence">
+      <Item value="InstanceId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.MenuItem">
+      <Item value="IsChecked" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.MessageBox">
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Discovery.DiscoveryClient">
+      <Item value="Find`0" priority="0" />
+      <Item value="FindCompleted" priority="0" />
+      <Item value="ResolveCompleted" priority="0" />
+      <Item value="ResolveAsync`0" priority="0" />
+      <Item value="ProxyAvailable" priority="0" />
+      <Item value="Open`0" priority="0" />
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.ThreadPool">
+      <Item value="QueueUserWorkItem`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Threading.Dispatcher">
+      <Item value="BeginInvoke`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Discovery.FindCompletedEventArgs">
+      <Item value="Result" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Discovery.FindResponse">
+      <Item value="Endpoints" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.ObjectModel.Collection`1">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DrWPF.Windows.Data.ObservableDictionary`2">
+      <Item value="Clear`0" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Input.CanExecuteRoutedEventArgs">
+      <Item value="CanExecute" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Discovery.ResolveCompletedEventArgs">
+      <Item value="Result" priority="2" />
+      <Item value="Equals`0" priority="0" />
+      <Item value="Error" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Discovery.ResolveResponse">
+      <Item value="EndpointDiscoveryMetadata" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Discovery.EndpointDiscoveryMetadata">
+      <Item value="Address" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Discovery.AnnouncementEventArgs">
+      <Item value="MessageSequence" priority="1" />
+      <Item value="EndpointDiscoveryMetadata" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.EndpointAddress">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Roniz.Diagnostics.Logging.ILog">
+      <Item value="Error`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/d:TemplateSelectors/f:MultiOrSingleItemTemplateSelector.cs" caret="1050" fromTop="24" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/d:Converters/f:GlobalAddressConverter.cs" caret="1430" fromTop="21" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:App.config" caret="58" fromTop="1" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:NLog.config" caret="0" fromTop="0" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:App.xaml" caret="250" fromTop="0" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="1023" fromTop="10" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="3136" fromTop="9" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="5867" fromTop="9" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="1059" fromTop="0" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="5159" fromTop="16" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="6377" fromTop="17" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="5815" fromTop="23" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="4908" fromTop="20" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="5344" fromTop="33" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="7074" fromTop="18" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="3682" fromTop="23" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

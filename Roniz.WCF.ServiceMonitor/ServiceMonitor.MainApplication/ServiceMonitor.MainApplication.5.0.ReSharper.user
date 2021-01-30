@@ -1,0 +1,195 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:System.ServiceModel.Discovery.DiscoveryMessageSequence">
+      <Item value="InstanceId" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="new" priority="8" />
+      <Item value="object" priority="0" />
+      <Item value="lock" priority="1" />
+      <Item value="DataContext" priority="0" />
+      <Item value="ObservableCollection" priority="1" />
+      <Item value="announcementEventArgs" priority="0" />
+      <Item value="Border`0" priority="0" />
+      <Item value="public" priority="0" />
+      <Item value="DependencyProperty`0" priority="0" />
+      <Item value="typeof" priority="1" />
+      <Item value="XmlElement`0" priority="0" />
+      <Item value="Viewer`0" priority="2" />
+      <Item value="null" priority="10" />
+      <Item value="viewer" priority="3" />
+      <Item value="d" priority="0" />
+      <Item value="as" priority="3" />
+      <Item value="if" priority="5" />
+      <Item value="return" priority="13" />
+      <Item value="XmlDocument" priority="1" />
+      <Item value="e" priority="4" />
+      <Item value="XElement`0" priority="2" />
+      <Item value="xElement" priority="6" />
+      <Item value="var" priority="0" />
+      <Item value="value" priority="3" />
+      <Item value="XElementToXmlDocumentConverter`0" priority="0" />
+      <Item value="xmlDocument" priority="5" />
+      <Item value="static" priority="0" />
+      <Item value="OverridesDefaultStyleProperty" priority="0" />
+      <Item value="get" priority="1" />
+      <Item value="GetValue`0" priority="0" />
+      <Item value="XElementProperty" priority="1" />
+      <Item value="set" priority="1" />
+      <Item value="SetValue`0" priority="0" />
+      <Item value="override" priority="2" />
+      <Item value="MultiItemsTemplate" priority="0" />
+      <Item value="SingleItemTemplate" priority="0" />
+      <Item value="isMultipleItems" priority="1" />
+      <Item value="false" priority="3" />
+      <Item value="protected" priority="0" />
+      <Item value="item" priority="3" />
+      <Item value="true" priority="0" />
+      <Item value="ContractNamesTemplateSelector`0" priority="0" />
+      <Item value="keyValuePair" priority="1" />
+      <Item value="virtual" priority="0" />
+      <Item value="abstract" priority="1" />
+      <Item value="DiscoveryClient`0" priority="0" />
+      <Item value="DiscoveryClient" priority="0" />
+      <Item value="UdpDiscoveryEndpoint`0" priority="0" />
+      <Item value="discoveryClient" priority="0" />
+      <Item value="FindCriteria" priority="0" />
+      <Item value="messageSequence" priority="0" />
+      <Item value="endpointDiscoveryMetadata" priority="1" />
+      <Item value="IPAddress" priority="0" />
+      <Item value="IEnumerable" priority="0" />
+      <Item value="List" priority="0" />
+      <Item value="collection" priority="3" />
+      <Item value="x" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.ObjectModel.ObservableCollection`1">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Discovery.AnnouncementEventArgs">
+      <Item value="EndpointDiscoveryMetadata" priority="1" />
+      <Item value="MessageSequence" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.DependencyProperty">
+      <Item value="Register`0" priority="0" />
+      <Item value="RegisterAttached`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:XMLViewer.Viewer">
+      <Item value="xmlDocument" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.DependencyPropertyChangedEventArgs">
+      <Item value="NewValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Linq.XElement">
+      <Item value="Value" priority="0" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlDocument">
+      <Item value="LoadXml`0" priority="0" />
+      <Item value="Load`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.DependencyProperty">
+      <Item value="OverrideMetadata`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ServiceMonitor.MainApplication.TemplateSelectors.ContractNamesTemplateSelector">
+      <Item value="SingleItemTemplate" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Value" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Discovery.EndpointDiscoveryMetadata">
+      <Item value="ContractTypeNames" priority="1" />
+      <Item value="ListenUris" priority="0" />
+      <Item value="Extensions" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.ObjectModel.Collection`1">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="HasValue" priority="0" />
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Discovery.DiscoveryClient">
+      <Item value="FindAsync`0" priority="0" />
+      <Item value="FindProgressChanged" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Discovery.FindProgressChangedEventArgs">
+      <Item value="MessageSequence" priority="0" />
+      <Item value="EndpointDiscoveryMetadata" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DrWPF.Windows.Data.ObservableDictionary`2">
+      <Item value="Clear`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.IPAddress">
+      <Item value="Loopback" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Find`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="11D17F23-E54C-47D3-A04C-1338F456AC87/f:Viewer.xaml" caret="1" fromTop="0" />
+      <File id="11D17F23-E54C-47D3-A04C-1338F456AC87/f:Viewer.xaml.cs" caret="1382" fromTop="18" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:ObservableDictionary.cs" caret="18667" fromTop="13" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/d:TemplateSelectors/f:EndpointDiscoveryMetadataMultiOrSingleItemTemplateSelector.cs" caret="353" fromTop="8" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/d:TemplateSelectors/f:MultiOrSingleItemTemplateSelector.cs" caret="758" fromTop="12" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/d:TemplateSelectors/f:ListenUrisTemplateSelector.cs" caret="454" fromTop="12" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/d:TemplateSelectors/f:ContractNamesTemplateSelector.cs" caret="470" fromTop="12" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/d:TemplateSelectors/f:ScopesTemplateSelector.cs" caret="442" fromTop="12" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/d:Converters/f:GlobalAddressConverter.cs" caret="1341" fromTop="15" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="4451" fromTop="16" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="3808" fromTop="10" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="3987" fromTop="30" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="4302" fromTop="29" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="3624" fromTop="14" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="3372" fromTop="9" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="1738" fromTop="6" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="2454" fromTop="20" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="2797" fromTop="21" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="3144" fromTop="21" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="3106" fromTop="20" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="4207" fromTop="17" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="4680" fromTop="4" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="6382" fromTop="21" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="1042" fromTop="11" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="1342" fromTop="12" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/d:TemplateSelectors/f:ContractNamesTemplateSelector.cs" caret="470" fromTop="21" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/d:TemplateSelectors/f:ContractNamesTemplateSelector.cs" caret="470" fromTop="21" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/d:TemplateSelectors/f:ContractNamesTemplateSelector.cs" caret="470" fromTop="13" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/d:TemplateSelectors/f:ContractNamesTemplateSelector.cs" caret="470" fromTop="12" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="6364" fromTop="19" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="5177" fromTop="19" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="5847" fromTop="14" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="7616" fromTop="11" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="7069" fromTop="10" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="3190" fromTop="13" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/d:Converters/f:GlobalAddressConverter.cs" caret="389" fromTop="7" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="3454" fromTop="10" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml" caret="3808" fromTop="10" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/f:MainWindow.xaml.cs" caret="4451" fromTop="16" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/d:Converters/f:GlobalAddressConverter.cs" caret="1162" fromTop="11" />
+      <File id="0576F9A0-8E4B-4B30-89BB-C6B7F7FDBFC6/d:Converters/f:GlobalAddressConverter.cs" caret="1373" fromTop="16" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

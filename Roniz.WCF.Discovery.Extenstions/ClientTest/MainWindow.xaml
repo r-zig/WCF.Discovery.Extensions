@@ -1,0 +1,23 @@
+﻿<Window x:Class="Roniz.WCF.Discovery.Extenstions.ClientTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Roniz.WCF.Discovery.Extenstions.ClientTest" 
+        Title="Client Test" Height="350" Width="525">
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Close"
+                    Executed="OnClose"
+                    CanExecute="OnCanClose"/>
+        <CommandBinding Command="local:Commands.OpenServiceCommand"
+                        Executed="OpenServiceExecuted"
+                        CanExecute="OpenServiceCanExecute" />
+
+        <CommandBinding Command="local:Commands.CloseServiceCommand"
+                        Executed="CloseServiceExecuted"
+                        CanExecute="CloseServiceCanExecute" />
+    </Window.CommandBindings>
+    <Grid>
+        <Button Content="Open Announcement Service" Command="local:Commands.OpenServiceCommand" Height="23" HorizontalAlignment="Left" Margin="18,19,0,0" Name="buttonOpenService" VerticalAlignment="Top" />
+        <Button Content="Close Announcement Service" Command="local:Commands.CloseServiceCommand" Height="23" HorizontalAlignment="Left" Margin="18,48,0,0" Name="buttonCloseService" VerticalAlignment="Top" />
+        <RichTextBox Height="208" HorizontalAlignment="Left" Margin="18,91,0,0" Name="richTextBoxLog" VerticalAlignment="Top" Width="473" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" />
+    </Grid>
+</Window>

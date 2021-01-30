@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CFBF659D-E193-48C0-85AC-85E1A9C95CDF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Roniz.WCF.Discovery.Extenstions</RootNamespace>
+    <AssemblyName>Roniz.WCF.Discovery.Extenstions</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <CodeContractsAssemblyMode>1</CodeContractsAssemblyMode>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRunCodeAnalysis>True</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsContainerAnalysis>False</CodeContractsContainerAnalysis>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>False</CodeContractsCacheAnalysisResults>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>%28none%29</CodeContractsReferenceAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>True</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsContainerAnalysis>False</CodeContractsContainerAnalysis>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>False</CodeContractsCacheAnalysisResults>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>%28none%29</CodeContractsReferenceAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Behaviors\Address\LocalAddressDiscoveryServiceBehavior.cs" />
+    <Compile Include="Behaviors\Address\LocalAddressExtensionProvider.cs" />
+    <Compile Include="Behaviors\Address\AddressDiscoveryServiceBehavior.cs" />
+    <Compile Include="Behaviors\Address\RemoteAddressExtensionProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Behaviors\Address\AddressingOptions.cs" />
+    <Compile Include="Behaviors\Address\AddressResolverConfiguration.cs" />
+    <Compile Include="Behaviors\Address\AddressResolvingMode.cs" />
+    <Compile Include="Behaviors\Binding\BindingDiscoveryServiceBehavior.cs" />
+    <Compile Include="Behaviors\Binding\BindingExtensionProvider.cs" />
+    <Compile Include="Behaviors\ServiceBehaviorBase.cs" />
+    <Compile Include="Behaviors\ExtensionsServiceBehaviorBase.cs" />
+    <Compile Include="Behaviors\IExtensionProvider.cs" />
+    <Compile Include="Behaviors\ServiceUniqueness\UniqueServiceExtensionProvider.cs" />
+    <Compile Include="Behaviors\ServiceUniqueness\UniqueServiceIdDiscoveryBehavior.cs" />
+    <Compile Include="Client\DiscoveryClientEx.cs" />
+    <Compile Include="DiscoveryProxy\AsyncResult.cs" />
+    <Compile Include="DiscoveryProxy\DiscoveryProxyService.cs" />
+    <Compile Include="DiscoveryProxy\EndpointDiscoveryMetadataEventArgs.cs" />
+    <Compile Include="DiscoveryProxy\OnFindAsyncResult.cs" />
+    <Compile Include="DiscoveryProxy\OnOfflineAnnouncementAsyncResult.cs" />
+    <Compile Include="DiscoveryProxy\OnOnlineAnnouncementAsyncResult.cs" />
+    <Compile Include="DiscoveryProxy\OnResolveAsyncResult.cs" />
+    <Compile Include="Endpoints\DiscoveryStateEventArgs.cs" />
+    <Compile Include="Endpoints\IDiscoveryStatus.cs" />
+    <Compile Include="Endpoints\P2PAnnouncementEndpoint.cs" />
+    <Compile Include="Endpoints\P2PDiscoveryDefaults.cs" />
+    <Compile Include="Endpoints\P2PDiscoveryEndpoint.cs" />
+    <Compile Include="ErrorMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErrorMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\FindCriteriaHelper.cs" />
+    <Compile Include="Helpers\ReflectionHelper.cs" />
+    <Compile Include="Helpers\ServiceHostHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicesCache\Criteria.cs" />
+    <Compile Include="ServicesCache\CriteriasContainer.cs" />
+    <Compile Include="ServicesCache\FullStateContainer.cs" />
+    <Compile Include="ServicesCache\IDiscoveryClient.cs" />
+    <Compile Include="ServicesCache\ServiceFullPresenceInfo.cs" />
+    <Compile Include="ServicesCache\SynchronizaedServiceCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Roniz.Diagnostics.1.0.0.13\lib\NET40\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Roniz.Common">
+      <HintPath>..\Dependencies\Roniz.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Roniz.Diagnostics.Logging, Version=1.0.0.12, Culture=neutral, PublicKeyToken=6bf851905c9b26bd, processorArchitecture=MSIL">
+      <HintPath>..\packages\Roniz.Diagnostics.1.0.0.13\lib\NET40\Roniz.Diagnostics.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Roniz.Networking.Client, Version=1.0.0.7, Culture=neutral, PublicKeyToken=6bf851905c9b26bd, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetworkingUtilities.Client.1.0.0.8\lib\NET40\Roniz.Networking.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Roniz.Networking.Common, Version=1.0.0.7, Culture=neutral, PublicKeyToken=6bf851905c9b26bd, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetworkingUtilities.Client.1.0.0.8\lib\NET40\Roniz.Networking.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Roniz.WCF.P2P.Channels, Version=1.0.0.24, Culture=neutral, PublicKeyToken=6bf851905c9b26bd, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetworkingUtilities.Client.1.0.0.8\lib\NET40\Roniz.WCF.P2P.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="Roniz.WCF.P2P.Messages, Version=1.0.0.24, Culture=neutral, PublicKeyToken=6bf851905c9b26bd, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetworkingUtilities.Client.1.0.0.8\lib\NET40\Roniz.WCF.P2P.Messages.dll</HintPath>
+    </Reference>
+    <Reference Include="Roniz.WCF.P2P.Sync, Version=1.0.0.24, Culture=neutral, PublicKeyToken=6bf851905c9b26bd, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetworkingUtilities.Client.1.0.0.8\lib\NET40\Roniz.WCF.P2P.Sync.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceModelEx, Version=4.0.0.1, Culture=neutral, PublicKeyToken=d0f8277329bba7a0, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetworkingUtilities.Client.1.0.0.8\lib\NET40\ServiceModelEx.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Discovery" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ErrorMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
